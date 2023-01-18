@@ -1,0 +1,14 @@
+<svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="
+    M 0, 33
+    C 0, 19.14 19.14, 0 33, 0
+    S 66, 19.14 66, 33
+        46.86, 66 33, 66
+        0, 46.86 0, 33
+" fill="#9a7032" transform="rotate(
+    -17,
+    100,
+    100
+) translate(
+    80
+    80
+)"></path></svg>

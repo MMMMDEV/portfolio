@@ -1,0 +1,387 @@
+:root {
+  --brown-gold: #9a7032;
+  --app-padding: 2em;
+  --project-width: 18rem;
+  --welcome-height: 16rem;
+  --animation-time: 2.5s;
+  --animation-delay: 0.1s;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: #141414;
+}
+
+/* App */
+
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0em var(--app-padding);
+  overflow: hidden;
+}
+
+/* Welcome */
+.Welcome {
+  width: 100%;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.welcome-text {
+  width: 100%;
+  position: relative;
+}
+
+.hero {
+  margin: 1em 0em;
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  transform: translateX(-3rem);
+  opacity: 0;
+  animation: FadeInSides var(--animation-time) var(--animation-delay) ease
+    forwards;
+}
+
+.squarecle {
+  position: absolute;
+}
+
+.squarecle1 {
+  transform: translateX(-2rem);
+}
+.squarecle2 {
+  transform: translateY(1rem);
+}
+.squarecle3 {
+  transform: translateY(1rem);
+}
+
+.squarecle4 {
+  transform: translateX(2rem);
+}
+
+/* About-me */
+
+.AboutMe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.about-text {
+  max-width: 80ch;
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin: 2em 0em;
+  transform: translateY(3rem);
+  opacity: 0;
+  animation: FadeInUp var(--animation-time) var(--animation-delay) ease forwards;
+}
+
+.tool-container {
+  width: 16rem;
+  height: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9em;
+  border: 0.3em solid var(--brown-gold);
+  border-radius: 2rem;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  padding: 1em;
+  transform: translateY(3rem);
+  opacity: 0;
+  animation: FadeInUp var(--animation-time) var(--animation-delay) ease forwards;
+}
+
+.tool-icon {
+  width: 3.3rem;
+}
+
+/* Projects */
+
+.Projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin: 3em 0em;
+  padding-bottom: 4em;
+  gap: 2rem;
+  position: relative;
+}
+
+.project {
+  transform: translateY(3rem);
+  opacity: 0;
+  animation: FadeInUp var(--animation-time) var(--animation-delay) ease forwards;
+}
+
+.Projects-title {
+  align-self: flex-start;
+}
+
+.project-img {
+  width: var(--project-width);
+  margin-bottom: 0.5em;
+}
+
+.subtext-container {
+  width: var(--project-width);
+}
+
+.subtext {
+  margin: 0.4em 0em;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+a,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* Contact */
+
+.Contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.contact-title {
+  margin: 1em 0em;
+  transform: translateX(-3rem);
+  opacity: 0;
+  animation: FadeInSides var(--animation-time) var(--animation-delay) ease
+    forwards;
+}
+
+.contact-text {
+  max-width: 40ch;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+  transform: translateX(-3rem);
+  opacity: 0;
+  animation: FadeInSides var(--animation-time) var(--animation-delay) ease
+    forwards;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5em;
+  transform: translateY(3rem);
+  opacity: 0;
+  animation: FadeInUp var(--animation-time) var(--animation-delay) ease forwards;
+}
+
+.contact-input {
+  width: var(--project-width);
+  height: 2rem;
+  padding: 0.5em;
+  background-color: transparent;
+  color: white;
+  border: 0.1rem solid var(--brown-gold);
+  border-radius: 0.5rem;
+}
+
+.contact-input:focus {
+  border: 0.1rem solid #4d9a45;
+}
+
+.contact-textarea {
+  max-width: var(--project-width);
+  height: 6rem;
+}
+
+.contact-submit,
+.ThankYou-submit {
+  width: 6rem;
+  height: 2.5rem;
+  border: 0px solid transparent;
+  color: white;
+  background-color: #4d9a45;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/* Thank You */
+
+.ThankYou {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.thanks-title {
+  margin: 0.5em 0em;
+}
+
+.thanks-text {
+  margin: 0.5em 0em;
+}
+
+.ThankYou-submit {
+  margin: 1em;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.social-media-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.social-icons {
+  width: 2.5rem;
+  transform: translateY(3rem);
+  opacity: 0;
+  animation: FadeInUp var(--animation-time) var(--animation-delay) ease forwards;
+  cursor: pointer;
+}
+
+.copyright {
+  margin: 1em;
+  transform: translateY(3rem);
+  opacity: 0;
+  animation: FadeInUp var(--animation-time) var(--animation-delay) ease forwards;
+}
+
+/* animations */
+
+@keyframes FadeInSides {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes FadeInUp {
+  to {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (width > 420px) {
+  :root {
+    --app-padding: 12em;
+    --project-width: 25rem;
+  }
+}
+
+@media screen and (width > 1300px) {
+  :root {
+    --app-padding: 0em;
+    --project-width: 45rem;
+    --welcome-height: 25rem;
+  }
+
+  .Home {
+    width: 40%;
+  }
+
+  .Welcome {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .hero {
+    margin: 1em 0em;
+    font-size: 2.5rem;
+  }
+
+  .squarecle1 {
+    transform: translateX(-12rem) translateY(-5rem);
+  }
+  .squarecle2 {
+    transform: translateY(8rem);
+  }
+  .squarecle3 {
+    transform: translateY(5rem) translateX(-9rem);
+  }
+
+  .squarecle4 {
+    transform: translateX(3rem);
+  }
+
+  .tool-container {
+    width: 20rem;
+    height: 26rem;
+    gap: 0.9em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    padding: 1em;
+  }
+
+  .tool-icon {
+    width: 4rem;
+  }
+
+  .contact-input {
+    max-width: 70%;
+  }
+}
