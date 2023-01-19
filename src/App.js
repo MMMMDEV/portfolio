@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Thank-You" element={<ThankYou />} />
+        <Route path="/ThankYou" element={<ThankYou />} />
       </Routes>
       <footer className="footer">
         <div className="social-media-icons">
