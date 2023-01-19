@@ -15,11 +15,6 @@ export default function Contact() {
         method="POST"
       >
         <input
-          type="hidden"
-          name="_next"
-          value="https://scriptdocere.net/Thank-You"
-        ></input>
-        <input
           className="contact-input"
           type="text"
           name="name"

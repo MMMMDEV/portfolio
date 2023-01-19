@@ -4,7 +4,7 @@ import Project from "./Project";
 export default function Projects() {
   return (
     <div className="Projects">
-      <a href="https://mmmmdev.github.io/shopping-cart-top/">
+      <a href="https://shopping-cart-top.pages.dev/">
         <Project
           title="Clothing Shop"
           picture="project1.png"
