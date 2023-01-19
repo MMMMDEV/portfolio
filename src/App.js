@@ -2,17 +2,15 @@ import React from "react";
 import "./normalize.css";
 import "./app.css";
 import Icon from "@mdi/react";
-import { mdiInstagram, mdiBriefcaseVariant } from "@mdi/js";
+import { mdiInstagram, mdiBriefcaseVariant, mdiGithub } from "@mdi/js";
 import Home from "./components/Home";
 import { Route, Routes } from "react-router";
-import ThankYou from "./components/ThankYou";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/thanks" element={<ThankYou />} />
       </Routes>
       <footer className="footer">
         <div className="social-media-icons">
@@ -29,6 +27,14 @@ function App() {
               title="upwork icon"
               className="social-icons"
               path={mdiBriefcaseVariant}
+              color="#9a7032"
+            ></Icon>
+          </a>
+          <a href="https://github.com/MMMMDEV">
+            <Icon
+              title="Github icon"
+              className="social-icons"
+              path={mdiGithub}
               color="#9a7032"
             ></Icon>
           </a>
