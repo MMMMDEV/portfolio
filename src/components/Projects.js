@@ -20,14 +20,6 @@ export default function Projects() {
           altText="a screenshot of a sign-up from"
         />
       </a>
-      <a href="https://mmmmdev.github.io/rock-paper-scissor/">
-        <Project
-          title="Rock Paper Scissor"
-          picture="project3.png"
-          subtextP="Html5 Css3 javascript, Just a small game showing some basic javascript logic"
-          altText="a screenshot of a rock paper scissors game website"
-        />
-      </a>
     </div>
   );
 }
