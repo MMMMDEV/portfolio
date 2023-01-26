@@ -20,6 +20,12 @@ export default function Projects() {
           altText="a screenshot of a sign-up from"
         />
       </a>
+      <Project
+        title="Weather App Design"
+        picture="project3.jpg"
+        subtextP="Figma"
+        altText="a screenshot of 2 weather app designs"
+      />
     </div>
   );
 }
