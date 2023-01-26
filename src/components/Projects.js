@@ -12,7 +12,7 @@ export default function Projects() {
           altText="a screenshot of a clothing shop application model"
         />
       </a>
-      <a href="https://github.com/MMMMDEV/sign-up-form-top/deployments/activity_log?environment=github-pages">
+      <a href="https://mmmmdev.github.io/sign-up-form-top/">
         <Project
           title="Sign-up Form"
           picture="project2.png"
