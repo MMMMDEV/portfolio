@@ -26,6 +26,14 @@ export default function Projects() {
         subtextP="Figma"
         altText="a screenshot of 2 weather app designs"
       />
+      <a href="https://jazizcs.net/">
+        <Project
+          title="Jaziz's Cleaning Service LLC"
+          picture="project4.png"
+          subtextP="React, A website for Jaziz's cleaning Service. Many things were built into this website including a custom estimate calculator."
+          altText="a screenshot of the website jazizcs.net"
+        />
+      </a>
     </div>
   );
 }

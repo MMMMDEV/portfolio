@@ -6,11 +6,11 @@ export default function AboutMe() {
       <div className="about-text">
         <h2 className="about-title">About Me</h2>
         <p>
-          I&apos;ve loved tinkering with technology since I was a kid, always
-          trying to see how things worked.
+          I&apos;ve loved tinkering with technology since I was a kid, and
+          always trying to see how things worked.
         </p>
         <p>
-          In high school I got to build my first computer, and it made me
+          In high school, I got to build my first computer, and it made me
           realize that I wanted to do something that involved tech in the
           future.
         </p>

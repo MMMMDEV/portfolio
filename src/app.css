@@ -23,6 +23,16 @@ body {
   background-color: #141414;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /* App */
 
 .App {
@@ -45,6 +55,7 @@ body {
   align-items: center;
   text-align: center;
   position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
 .welcome-text {
@@ -56,7 +67,6 @@ body {
   margin: 1em 0em;
   color: white;
   font-size: 1.8rem;
-  font-family: "Poppins", sans-serif;
   transform: translateX(-3rem);
   opacity: 0;
   animation: FadeInSides var(--animation-time) var(--animation-delay) ease
@@ -79,6 +89,31 @@ body {
 
 .squarecle4 {
   transform: translateX(2rem);
+}
+
+.CTA-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0em;
+}
+
+.quoteBtn {
+  width: 11rem;
+  height: 3.2rem;
+  border: 0px solid transparent;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  z-index: 5;
+  font-family: "Poppins", sans-serif;
+}
+
+button,
+Link {
+  cursor: pointer;
 }
 
 /* About-me */
@@ -160,6 +195,7 @@ body {
 }
 
 .subtext {
+  max-width: 50ch;
   margin: 0.4em 0em;
   font-size: 0.9rem;
   font-style: italic;
@@ -227,7 +263,8 @@ a:active {
   border-radius: 0.5rem;
 }
 
-.contact-input:focus {
+.contact-input:focus,
+.conatact-input-quote:focus {
   border: 0.1rem solid #4d9a45;
 }
 
@@ -308,6 +345,99 @@ a:active {
   transform: translateY(3rem);
   opacity: 0;
   animation: FadeInUp var(--animation-time) var(--animation-delay) ease forwards;
+}
+
+/* Quote sections */
+
+.QuoteType,
+.Pages,
+.DevelopmentType,
+.FinalQuote {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.Nav {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0em 1em;
+}
+
+.arrowBack {
+  width: 2.4rem;
+}
+
+.option-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  gap: 1.8rem;
+}
+
+.prompt {
+  width: 20ch;
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.optionBtn,
+.optionInput {
+  width: 13rem;
+  height: 5rem;
+  border: 0px solid transparent;
+  border-radius: 1rem;
+  font-weight: 500;
+  background-color: white;
+}
+
+.optionInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0em 1em;
+}
+
+.label-option {
+  color: rgb(0, 0, 0);
+}
+
+.numInput {
+  width: 4rem;
+  height: 2rem;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.contact-input-quote {
+  width: var(--project-width);
+  height: 2rem;
+  padding: 0.5em;
+  background-color: white;
+  color: white;
+  border: 0px solid transparent;
+  border-radius: 0.5rem;
 }
 
 /* animations */
