@@ -5,6 +5,7 @@
   --welcome-height: 16rem;
   --animation-time: 2.5s;
   --animation-delay: 0.1s;
+  --nav-height: 5rem;
 }
 
 *,
@@ -97,6 +98,10 @@ input[type="number"] {
   justify-content: center;
   align-items: center;
   margin: 1em 0em;
+  transform: translateX(-3rem);
+  opacity: 0;
+  animation: FadeInSides var(--animation-time) var(--animation-delay) ease
+    forwards;
 }
 
 .quoteBtn {
@@ -255,17 +260,17 @@ a:active {
 
 .contact-input {
   width: var(--project-width);
-  height: 2rem;
+  height: 2.8rem;
   padding: 0.5em;
-  background-color: transparent;
-  color: white;
-  border: 0.1rem solid var(--brown-gold);
+  background-color: white;
+  color: black;
+  border: 0.1rem solid transparent;
   border-radius: 0.5rem;
 }
 
 .contact-input:focus,
 .conatact-input-quote:focus {
-  border: 0.1rem solid #4d9a45;
+  border: 0.25rem solid #4d9a45;
 }
 
 .contact-textarea {
@@ -354,12 +359,18 @@ a:active {
 .DevelopmentType,
 .FinalQuote {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: "Poppins", sans-serif;
+  opacity: 0;
+  animation: FadeInUp var(--animation-time) var(--animation-delay) ease forwards;
 }
 
 .Nav {
   width: 100%;
-  height: 5rem;
+  height: var(--nav-height);
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -372,12 +383,11 @@ a:active {
 
 .option-container {
   width: 100%;
+  min-height: calc(100vh - var(--nav-height));
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 4rem;
-  margin-bottom: 5rem;
   gap: 1.8rem;
 }
 
@@ -461,6 +471,10 @@ a:active {
     --app-padding: 12em;
     --project-width: 25rem;
   }
+
+  .option-container {
+    margin-bottom: 3rem;
+  }
 }
 
 @media screen and (width > 1300px) {
@@ -513,5 +527,9 @@ a:active {
 
   .contact-input {
     max-width: 70%;
+  }
+
+  .Nav {
+    padding: 0em 12em;
   }
 }

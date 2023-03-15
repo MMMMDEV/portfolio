@@ -1,13 +1,23 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ArrowBack from "../images/arrow-back.svg";
+import PropTypes from "prop-types";
 
-export default function Pages() {
+export default function Pages({ setInputValues, inputValues }) {
   const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
     navigate("/Quote-Type/Pages/Dev-Type");
+  }
+
+  function handleChange(e) {
+    setInputValues((prev) => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      };
+    });
   }
 
   return (
@@ -29,6 +39,9 @@ export default function Pages() {
               Pages:
             </label>
             <input
+              name="Pages"
+              value={inputValues.Pages}
+              onChange={handleChange}
               type="number"
               className="numInput"
               id="pageNum"
@@ -41,3 +54,8 @@ export default function Pages() {
     </div>
   );
 }
+
+Pages.propTypes = {
+  setInputValues: PropTypes.func,
+  inputValues: PropTypes.object,
+};
