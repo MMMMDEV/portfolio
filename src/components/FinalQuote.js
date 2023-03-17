@@ -13,6 +13,8 @@ export default function FinalQuote({ setInputValues, inputValues }) {
     Price: price,
   };
 
+  const finalText = JSON.stringify(text);
+
   return (
     <div className="FinalQuote">
       <nav className="Nav">
@@ -50,7 +52,7 @@ export default function FinalQuote({ setInputValues, inputValues }) {
             placeholder="Email"
             required
           ></input>
-          <input type="hidden" name="message" value={text}></input>
+          <input type="hidden" name="message" value={finalText}></input>
           <button className="contact-submit" type="submit">
             Send
           </button>
